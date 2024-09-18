@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.5.1.js"></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Inscription au tirage au sort du pelerinage de l'annee 2022</h1>
+        </fieldset>
+        <h3>Information personnelles</h3>
+        <fieldset>
+            <table>
+                <tr>
+                    <td>CIN:</td>
+                    <td>
+                        <input type="text" id="cin" placeholder="enter votre CIN">
+                    </td>
+                </tr>
+                <tr>
+                    <td>NOM:</td>
+                    <td>
+                        <input type="text" id="nom" placeholder="enter votre NOM">
+                    </td>
+                </tr>
+                <tr>
+                    <td>PRENOM:</td>
+                    <td>
+                        <input type="text" id="prenom" placeholder="enter votre PRENOM">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date de dernier pelerinage:</td>
+                    <td>
+                        <input type="date" id="DT">
+                    </td>
+                </tr>
+                <tr>
+                    <td>sexe:</td>
+                    <td>
+                        <input type="radio" name="genre" id="sexeH">H
+                        <input type="radio"name="genre" id="sexeF">F
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <div id="accompagnateur">
+            <h3>Accompanateur(Mahram):</h3>
+        <fieldset>
+            <table>
+                <tr>
+                    <td>CIN de l'accompagnateur</td>
+                    <td>
+                        <select id="cinC">
+                            <option value="BHXXXX">BHXXXX</option>
+                            <option value="HHXXXX">HHXXXX</option>
+                            <option value="CHXXXX">CHXXXX</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>lien familial:</td>
+                    <td>
+                        <select id="Lfamilial">
+                            <option value="pere">pere</option>
+                            <option value="mere">mere</option>
+                            <option value="fils">fils</option>
+                            <option value="fille">fille</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+        
+
+        <h3>Dossier Medicale:</h3>
+        <fieldset>
+            <table>
+                <tr>
+                    <td>groupe canguin:</td>
+                    <td>
+                        <select id="canguin">
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>maladies:</td>
+                    <td>
+                        <textarea id="mld" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br/>
+        <input type="button" id="clic" value="S'inscrire">
+    </form>
+</body>
+</html>
